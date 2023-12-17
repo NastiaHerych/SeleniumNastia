@@ -30,3 +30,8 @@ Feature:
     Given open product = "/product/127021/"
     When click buy button
     When check if in cart = "/product/127021/"
+
+  @last_scenario
+  Scenario: Verify report existence
+    Given a file with name "report.html" exists in the project folder
+    Then the file should exist "report.html"
