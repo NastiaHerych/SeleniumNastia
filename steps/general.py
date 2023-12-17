@@ -17,7 +17,7 @@ def create_file(context, filename):
     with open(file_path, 'w'):
         pass
 
-@then('the file should exist')
+@then('the file should exist "{filename}"')
 def check_file_existence(context, filename):
     assert filename, f"Filename not provided in the context"
     hello = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
