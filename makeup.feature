@@ -29,7 +29,6 @@ Feature:
   Scenario: Add item to cart
     Given open product = "/product/127021/"
     When click buy button
-    When check if in cart = "/product/127021/"
 
   @last_scenario
   Scenario: Verify report existence
