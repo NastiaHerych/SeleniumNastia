@@ -20,5 +20,4 @@ def step(context, search):
 @when('run search')
 def step(context):
     context.driver.find_element(By.XPATH, "//form//button[contains(@class, 'search-button')]").click()
-    time.sleep(3)
     context.driver.quit()

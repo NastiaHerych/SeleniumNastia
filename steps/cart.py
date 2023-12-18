@@ -14,12 +14,10 @@ def step(context, url):
 @when('click buy button')
 def step(context):
     context.driver.find_element(By.XPATH, "//div[contains(@class, 'product-item__button')]").click()
-    time.sleep(3)
 
 
 @when('check if in cart = "{product}"')
 def step(context, product):
     xpath = f"//div[@class='product-list_product-item']//a[contains(@href, '{product}')]"
     context.driver.find_element(By.XPATH, xpath)
-    time.sleep(3)
 

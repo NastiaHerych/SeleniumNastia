@@ -8,5 +8,4 @@ def step(context, price):
     xpath = f"//li[contains(@id, '{price}')]"
     link = context.driver.find_element(By.XPATH, xpath)
     link.click()
-    time.sleep(3)
 
